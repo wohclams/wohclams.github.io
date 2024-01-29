@@ -1,0 +1,129 @@
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+	margin: 0;
+	font-family: 'Jost*', Helvetica, sans-serif;
+}
+a {
+	color: #b7e8f9;
+	color: #49c5f0;
+}
+
+a:hover {
+	background: #49c5f0;
+	color: #fff;
+}
+
+#container {
+	margin: 20px;
+	width: 800px;
+
+}
+
+h1 {
+	font-weight: 500;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%2300bdf2' fill-opacity='0.35'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+	display: inline-block;
+	padding: 0px 12px 0px 12px;
+	margin: 0;
+}
+
+main {
+	display: grid;
+	/*grid-template-columns: repeat(2, 1fr);*/
+	grid-template-columns: 400px 400px;
+	grid-column-gap: 40px;
+	grid-row-gap: 80px;
+}
+
+#basics {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#projects {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+#linklist {
+	grid-column: 2;
+	grid-row: span 2;
+	word-wrap: break-word;
+}
+
+h3 {
+	font-weight: 400;
+}
+
+.description {
+	color: #999;
+}
+
+.wip-badge {
+	border: solid 1px #49c5f0;
+	color: #49c5f0;
+	text-transform: uppercase;
+	font-size: 10px;
+	border-radius: 3px;
+	padding: 1px 3px 0px 3px;
+	vertical-align: middle;
+	cursor: help;
+}
+
+ul.basic-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.basic-list li {
+	margin: 0;
+	padding: 4px 0px 4px 0px;
+	display: flex;
+
+}
+
+ul.basic-list li i {
+	margin-right: 4px;
+	margin-top: 2px;
+}
+
+.feather {
+	width: 13px;
+	height: 13px;
+	stroke: #49c5f0;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+
+ul.projects-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.projects-list li {
+	margin: 8px 0px 8px 0px;
+	padding: 0;
+}
+
+/* Pinboard Styles */
+
+.pin-item {
+	margin: 4px 0px 4px 0px;
+}
+
+.pin-item p {
+	margin: 0;
+}
+.pin-title::before { content: "+ "; }
+.pin-title { font-size:12px;text-decoration:none;color:#49c5f0;}
+.pin-description { color:#999; font-size:12px;}
+.pin-tag { color:#18c;text-decoration:none;font-size:0.9em; display: none; }
